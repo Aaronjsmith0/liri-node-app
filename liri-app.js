@@ -50,7 +50,7 @@ function concertThis() {
                     }
                     var date = moment(results[i].datetime)
                     date = date.format("MM/DD/YYYY")
-                    var output = (`Venue: ${venue}\nLocation: ${location}\nDate: ${date}\n---------------------------------`);
+                    var output = (`Venue: ${venue}\nLocation: ${location}\nDate: ${date}\n---------------------------------\n`);
                     console.log(output)
                     fs.appendFile('log.txt', output, 'utf8', function (error) {
                         if (error) {
@@ -79,7 +79,7 @@ function spotifyThis() {
         var name = results.name;
         var preview = results.preview_url;
         var album = results.album.name;
-        var output = (`Artist: ${artist}\nSong Name: ${name}\nPreview Link: ${preview}\nAlbum: ${album}\n---------------------------------`);
+        var output = (`Artist: ${artist}\nSong Name: ${name}\nPreview Link: ${preview}\nAlbum: ${album}\n---------------------------------\n`);
         console.log(output)
         fs.appendFile('log.txt', output, 'utf8', function (error) {
             if (error) {
@@ -117,7 +117,7 @@ function movieThis() {
             language = results.Language;
             plot = results.Plot;
             actors = results.Actors;
-            var output = (`Title: ${title}\nYear: ${year}\nIMDB Rating: ${IMDB}\nRotten Tomatoes Rating: ${RT}\nCountry: ${country}\nLanguage: ${language}\nPlot: ${plot}\nActors: ${actors}\n---------------------------------`)
+            var output = (`Title: ${title}\nYear: ${year}\nIMDB Rating: ${IMDB}\nRotten Tomatoes Rating: ${RT}\nCountry: ${country}\nLanguage: ${language}\nPlot: ${plot}\nActors: ${actors}\n---------------------------------\n`)
             console.log(output)
             fs.appendFile('log.txt', output, 'utf8', function (error) {
                 if (error) {
