@@ -8,6 +8,7 @@
 * movie-this
 ###### After the command is run the data will be logged into the log.txt file
 # Do-what-it-says
+###### This runs whatever is stored in the random.txt file.
 ![do-what-it-says](/images/do-what-it-says.PNG)
 # Concert-this
 ![concert-this](/images/concert-this.PNG)
