@@ -7,4 +7,4 @@
 * spotify-this-song
 * movie-this
 # Do-what-it-says
-![do-what-it-says](/images/do-what-it-says)
+![do-what-it-says](../master/images/do-what-it-says.png)
